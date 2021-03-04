@@ -1,0 +1,132 @@
+:root{
+    --gray-light:RGB(250, 250, 250);
+    --gray-border: RGB(219, 219, 219);
+    --gray-text: rgba(121, 121, 121, 0.76);
+    --blue: RGB(178, 223, 252);
+    --blue-text: RGB(55, 81, 132);
+    --blue-text-2: RGB(50, 134, 195);
+    --white:#ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gray-light);
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3em;
+}
+.insta-content{
+    margin: .5em 1em;
+}
+.group-border, .form, label, .buttons, .links, .group{
+    display: flex;
+    flex-direction: column;
+}
+.group-border{
+    align-items: center;
+    border: 1px solid var(--gray-border);
+    background-color: var(--white);
+    padding: 1em;
+    margin: .5em;
+    min-width: 350px;
+}
+.group-border img{
+    width: 60%;
+    margin: 1em 0;
+}
+.form{
+    width: 80%;
+}
+.form label{
+    position: relative;
+}
+.form input{
+    position: relative;
+    background-color: var(--gray-light);
+    padding: .7em;
+    margin: .3em 0;
+    border: 1px solid var(--gray-border);
+    border-radius: 2px;
+    outline: none;
+}
+.form span{
+    display: flex;
+    position: absolute;
+    z-index: 50;
+    bottom: 13px;
+    left: 10px;
+    font-size: .75em;
+    color: var(--gray-text);
+}
+.form button{
+    margin: .9em 0;
+    padding: .55em;
+    border: none;
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: 600;
+}
+.buttons{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    border-top: 1px solid var(--gray-border);
+    margin: 1em 0;
+}
+.buttons span{
+    position: absolute;
+    top: -12%;
+    left: 40%;
+    padding: 0 1.4em;
+    font-size: .75em;
+    font-weight: 600;
+    color: var(--gray-text);
+    background-color: var(--white);
+    z-index: 50;
+}
+.buttons .links{
+    margin-top: 2em;
+}
+.login-facebook i{
+    margin-right: .4em;
+}
+.login-facebook{
+    color: var(--blue-text);
+    font-size: .9em;
+    font-weight: 500;
+}
+.senha{
+    margin-top: 1.5em;
+    font-size: .8em;
+    font-weight: 500;
+    color: var(--blue-text);
+}
+.group-border .text{
+    font-size: .9em;
+}
+.group-border .text a{
+    color: var(--blue-text-2);
+    font-weight: 500;
+}
+.group p{
+    text-align: center;
+    padding: .5em 0;
+    font-size: .9em;
+}
+.group .buttons-app{
+    text-align: center;
+    padding: .5em 0;
+    font-size: .9em;
+}
+.group .buttons-app{
+    justify-content: center;
+}
