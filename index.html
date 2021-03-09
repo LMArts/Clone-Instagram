@@ -1,67 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/instagram.svg"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="shortcut icon" href="img/instagram.svg" />
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Instagram</title>
 </head>
 <body>
-    <main>
-        <section>
-
-            <div class="insta-image">
-                <img src="img/phone.png" alt="Celular"/>
+    <div class="instagram">
+        <div class="instagram-phone">
+            <img src="img/phone.png" alt="Celular"/>
+        </div>
+        <div class="instagram-content">
+            <div class="instagram-group">
+                <img class="group-instagram-logo" src="img/instagram.png" alt="Logo Instagram"/>
+                <div class="group-profile-photo">
+                    <img src="img/cat.PNG" alt="Foto de perfil" />
+                </div>
+                <a href="#" class="group-login">Continuar como ___MrCat</a>
+                <a href="#" class="group-logout">Remover conta</a>
             </div>
-
-            <div class="insta-content">
-
-                <div class="group-border">
-                    
-                    <img src="img/instagram.png" alt="Instagram logo"/>
-                    
-                    <div class="form">
-                        <label>
-                            <span>Telefone, nome de usuário ou email</span>
-                            <input type="text"/>
-                        </label>
-                        <label>
-                            <span>Senha</span>
-                            <input type="password"/>
-                        </label>
-                        <button>Enviar</button>
-                    </div>
-                    
-                    <div class="buttons">
-                        <span>OU</span>
-                        <div class="links">
-                            <a class="login-facebook"><i class="fab fa-facebook-square fa-lg"></i>Entrar com o Facebook</a>
-                            <a class="senha">Esqueceu a senha?</a>
-                        </div>
-                    </div>
-                
-                </div>
-
-                <div class="group-border">
-                    <p class="text">Não tem uma conta? <a>Cadastre-se</a> </p>
-                </div>
-
-                <div class="group">
-                    <p>Obtenha o aplicativo.</p>
-                    <div class="buttons-app">
-                        <img src="img/appstore.png"/>
-                        <img src="img/playstore.png"/>
-                    </div>
-                </div>
-
+            <div class="instagram-group">
+                <p class="not-account">Não é ___MrCat?</p>
+                <p class="not-account">
+                    <span class="link-blue">Trocar de conta</span>
+                    ou
+                    <span class="link-blue">Cadastre-se</span>
+                </p>
             </div>
-
-        </section>
-    </main>
-    
-    <script src="https://kit.fontawesome.com/d8412520c2.js" crossorigin="anonymous"></script>
-
+            <div class="get-app">
+                <p class="get-app">Obtenha o aplicativo.</p>
+                <div class="store">
+                    <a href="#"><img src="img/appstore.png" alt="Apple Store"></a>
+                    <a href="#"><img src="img/playstore.png" alt="Play Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

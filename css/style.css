@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --cinza-gelo: RGB(250, 250, 250);
+    --branco: RGB(255, 255, 255);
+    --cinza-claro: RGB(219, 219, 219);
+    --azul: RGB(1, 149, 247);
+    --cinza-escuro: RGB(145, 140, 135);
+}
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 14px;
+    background-color: var(--cinza-gelo);
+}
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: .8em;
+}
+.instagram-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 43%;
+    min-height: 34rem;
+}
+.instagram-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid var(--cinza-claro);
+}
+.instagram-group:nth-child(1){
+    min-height: 19rem;
+}
+.group-instagram-logo{
+    height: 4rem;
+}
+.group-profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group-profile-photo img{
+    height: 6.5rem;
+    width: 7rem;
+}
+.group-login{
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.group-logout{
+    color: var(--azul);
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.not-account{
+    color: var(--cinza-escuro);
+}
+.link-blue{
+    color: var(--azul);
+    font-weight: 500;
+    cursor: pointer;
+}
+.get-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+}
+.store{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+@media (max-width: 1024px){
+    .instagram{
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    .instagram{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-content{
+        width: 100%;
+    }
+    .instagram-group{
+        background-color: var(--cinza-gelo);
+        border: 1px solid transparent;
+    }
+}
